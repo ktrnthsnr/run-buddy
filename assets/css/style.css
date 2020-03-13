@@ -1,0 +1,57 @@
+/* The asterix, a universtal selector, removes these default browser-enforced styles. We told every element on the page to not have any
+ margin or border unless we explicitly tell it to.*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    /* more on this crazy alphanumerical value in a minute! Hexidecimal value.*/
+    color: #fafafa;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  /* apply styles to <header> */
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+  }
+
+  header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline;
+  }
+
+  header a {
+    text-decoration: none;
+    color: #fce138;
+  }
+
+  /* Right align for nav section */
+  header nav {
+    float: right;
+    margin: 7px 0;
+  }
+
+  /* This concept is called Flow. Normal flow in HTML is a 
+  page with no CSS overriding default layout styles. 
+  This flow follows two directions: 
+  block (top to bottom) and 
+  inline (left to right)
+  This updated the list.*/
+  header nav ul li {
+    display: inline;
+  }
+
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+  }
+
+  h2 {
+    font-weight: bold;
+    color: #39a6b2;
+  }

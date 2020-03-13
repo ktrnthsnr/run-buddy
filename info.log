@@ -1,0 +1,94 @@
+
+
+-- run buddy project
+
+location: /c/Users/.../Desktop/projects/run-buddy
+
+    1  rm -rf ~/.git
+    2  pwd
+    3  ls
+    4  cd desktop
+    5  pwd
+    6  cd..
+    7  cd ..
+    8  cd desktop
+    9  cd ..
+   10  cd Desktop
+   11  pwd
+   12  mkdir projects
+   15  ls
+   17  clear
+   18  pwd
+   19  cd projects
+   21  pwd
+   22  cd run-buddy
+   23  mkdir run-buddy
+   24  pwd
+   25  ls
+   26  touch hello.txt
+   27  touch index.html
+   28  ls
+   29  cd run-buddy
+
+-- other
+
+   30  ls
+   31  rm hello.txt
+   32  ls
+   33  explorer .
+   34  code .
+   35  pwd
+
+-- START:  intialize git
+
+   36  git init
+   37  ls -a
+   38  git status
+
+-- upload index page
+
+   39  git add index.html
+   41  git status
+   42  git commit -m "page template"
+
+-- updated html and now ready to update git again
+
+   44  git status
+   45  git add index.html
+   47  git commit -m "added more text to the body of html"
+   48  git log
+   50  pwd
+
+-- add a gitignore page to local and then upload to git
+
+   51  git status
+   52  touch .gitignore
+   53  touch .DS_Store
+   54  git status
+   55  git add .
+   56  git add -A
+   58  git commit -m "html outline and gitignore"
+   59  git remote add origin git@github.com:ktrnthsnr/run-buddy.git
+   60  git remote -v
+   61  git push origin master
+
+-- check if you have SSH keys installed on your computer
+   62  ls -al~/.ssh
+   63  ls-al~/.ssh
+   64  id_rsa
+
+-- connect local to git
+   65  git remote add origin git@github.com:ktrnthsnr/run-buddy.git
+   67  git remote -v
+   69  git push origin master
+
+-- update latest from local to git
+   70  git add -A
+   71  git commit -m "added branding and navigation"
+   72  git push origin master
+
+-- view history and push to a log file for viewing
+   73  history
+   74  pwd
+   75  pwd > info.log
+   76  history >> info.log
