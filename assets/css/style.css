@@ -3,7 +3,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
     /* more on this crazy alphanumerical value in a minute! Hexidecimal value.*/
     color: #fafafa;
@@ -13,6 +15,7 @@ body {
   /* apply styles to <header> */
 header {
     padding: 20px 35px;
+    width: 100%;
     background-color: #39a6b2;
   }
 
@@ -54,4 +57,28 @@ header {
   h2 {
     font-weight: bold;
     color: #39a6b2;
+  }
+
+  footer {
+    background: #fce138;
+    width: 100%;
+    color: #39a6b2;
+    padding: 40px 35px;
+  }
+
+  footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+  }
+
+  footer a {
+    color: #024e76;
   }
