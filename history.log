@@ -1,0 +1,7 @@
+    1  git status
+    2  git push origin develop
+    3  git checkout master
+    5  ls
+    7  git status
+    8  git pull origin master
+    9  history > history.log
